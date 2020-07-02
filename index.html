@@ -1,9 +1,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine&effect=fire-animation|neon">
     <link href="css/app.css" rel="stylesheet">
+    <script type="text/javascript" src="js/form.js"></script>
     <script>
       var script = document.createElement('script');
       script.src = 'js/app.js';
@@ -12,13 +14,28 @@
     </script>
   </head>
   <body>
-   <canvas id="canvas">Your browser does not support the 'canvas' element.</canvas>
-   <div> 
-    <div class="font-effect-fire-animation message">Happy Independence Day!</div>
-    <div class="font-effect-neon from">From:&nbsp;</div>
-    <div class="font-effect-neon name">Vin Bhalerao</div>
-    <div class="font-effect-neon create">Create your own greeting</div>
-    <div class="font-effect-neon credits">Credits</div>
+    <canvas id="canvas">Your browser does not support the 'canvas' element.</canvas>
+    <div> 
+      <div class="font-effect-fire-animation message">Happy Independence Day!</div>
+      <div class="font-effect-neon from">From:&nbsp;</div>
+      <div class="font-effect-neon name">Vin Bhalerao</div>
+      <div class="font-effect-neon create" onclick="openForm()">Create your own greeting</div>
+      <div class="font-effect-neon credits">Credits</div>
+    </div>
+    
+    <div class="form-popup" id="createForm">
+      <form class="form-container">
+        <h1>Create Your Own Greeting</h1>
+
+        <label for="name"><b>Your Name:</b></label>
+        <input type="text" placeholder="Enter your name" name="name" required />
+
+        <label for="message"><b>Your Message:</b></label>
+        <input type="text" name="message" required value="Happy Independence Day!" />
+
+        <button type="submit" class="btn">Create</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
     </div>
   </body>
 </html>
