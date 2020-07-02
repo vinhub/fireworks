@@ -1,0 +1,60 @@
+/* Create a dark background. */
+body {
+	background: #000;
+	margin: 0;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  background-image: url('../img/seattle.jpg');  
+  background-repeat: no-repeat;  
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+/* Fit the canvas to the page width. */
+canvas {
+	display: block;
+}
+
+.message {
+  font-size: 120px; 
+  position: absolute; 
+  top: 20px; 
+  right: 100px;
+}
+
+.from {
+  font-size: 40px; 
+  width: 400px; 
+  position: absolute; 
+  bottom: 85px; 
+  left: 50%; 
+  margin-left: -200px; 
+  text-align: center;
+}
+
+.name {
+  font-size: 80px; 
+  width: 600px; 
+  position: absolute; 
+  bottom: 0px; 
+  left: 50%; 
+  margin-left: -300px; 
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.create {
+  font-size: 40px; 
+  position: absolute; 
+  bottom: 16px; 
+  left: 20px;
+}
+
+.credits {
+  font-size: 40px; 
+  position: absolute; 
+  bottom: 16px; 
+  right: 20px;
+}
