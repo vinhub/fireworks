@@ -431,5 +431,23 @@ function loop() {
 	launchManualFirework();
 }
 
+function initPage()
+{
+  const urlParams = new URLSearchParams(window.location.search);
+  var name = urlParams.get('name');
+  var message = urlParams.get('message');
+
+  if (!name)
+    name = 'Vin Bhalerao';
+
+  if (!message)
+    message = 'Happy Independence Day!';
+    
+  document.getElementById('nameDisplay').innerText = name;
+  document.getElementById('messageDisplay').innerText = message;
+
+  loop();
+}
+
 // Initiate loop after window loads.
-window.onload = loop;
+window.onload = initPage;
