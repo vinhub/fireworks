@@ -149,7 +149,11 @@ canvas {
   padding: 5px 5px 5px 15px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 800px){
+  body {
+    background-image: url('../img/seattlep.jpg');  
+  }
+
   .message {
     font-size: 48px; 
     top: 10px; 
