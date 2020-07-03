@@ -1,2 +1,2 @@
 # firename
-Create an animated indepdendence day greeting with fireworks!
+Create your own animated greeting with fireworks and share it with your friends!
