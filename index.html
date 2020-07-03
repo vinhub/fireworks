@@ -17,23 +17,17 @@
   <body>
     <canvas id="canvas">Your browser does not support the 'canvas' element.</canvas>
     <div>
+      <div class="font-effect-fire-animation message" id="messageDisplay"></div>
+      <div class="font-effect-neon name" id="nameDisplay"></div>
+      <div class="font-effect-neon personalize" onclick="openPersonalizeForm()">Personalize</div>
+      <div class="font-effect-neon about" onclick="openAboutPopup()">About</div>
       <!-- AddToAny BEGIN -->
-      <div class="a2a_kit a2a_kit_size_32 a2a_default_style sharing" data-a2a-title="Seattle Fireworks!">
-        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-        <a class="a2a_button_facebook"></a>
-        <a class="a2a_button_twitter"></a>
-        <a class="a2a_button_email"></a>
-      </div>
+      <div class="a2a_dd sharing font-effect-neon" href="https://www.addtoany.com/share">Share</div>
       <script async src="https://static.addtoany.com/menu/page.js"></script>
       <!-- AddToAny END -->
-      <div class="font-effect-fire-animation message" id="messageDisplay"></div>
-      <div class="font-effect-neon from">From:&nbsp;</div>
-      <div class="font-effect-neon name" id="nameDisplay"></div>
-      <div class="font-effect-neon create" onclick="openCreateForm()">Create your own greeting</div>
-      <div class="font-effect-neon credits" onclick="openCreditsPopup()">Credits</div>
     </div>
     
-    <div class="form-popup" id="createForm">
+    <div class="form-popup" id="personalizeForm">
       <form class="form-container">
         <h2>Create Your Own Greeting</h2>
 
@@ -44,13 +38,13 @@
         <input type="text" name="message" required value="Happy Independence Day!" />
 
         <button type="submit" class="btn">Create</button>
-        <button type="button" class="btn cancel" onclick="closeCreateForm()">Close</button>
+        <button type="button" class="btn cancel" onclick="closePersonalizeForm()">Close</button>
       </form>
     </div>
 
-    <div class="form-popup" id="creditsPopup">
+    <div class="form-popup" id="aboutPopup">
       <form class="form-container">
-        <h2>Seattle Fireworks!</h2>
+        <h2>About Seattle Fireworks!</h2>
 
         <div>A lot of cities are cancelling fireworks this year due to the pandemic. So this is an attempt to at least enjoy them virtually and share them with your friends.</div>
         
@@ -59,7 +53,7 @@
         <div><b>Original fireworks code:</b> <a href="https://airbrake.io/blog/javascript/fourth-of-july-javascript-fireworks" target="_blank">Andrew Powell-Morse</a></div>
         <div><b>Background image:</b> <a href="https://www.goodfreephotos.com/" target="_blank">Good Free Photos</a></div>
         
-        <button type="button" class="btn cancel" onclick="closeCreditsPopup()">Close</button>
+        <button type="button" class="btn cancel" onclick="closeAboutPopup()">Close</button>
       </form>
     </div>
   </body>

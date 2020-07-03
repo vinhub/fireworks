@@ -443,7 +443,7 @@ function initPage()
   if (!message)
     message = 'Happy Independence Day!';
     
-  document.getElementById('nameDisplay').innerText = name;
+  document.getElementById('nameDisplay').innerText = 'From: ' + name;
   document.getElementById('messageDisplay').innerText = message;
 
   loop();

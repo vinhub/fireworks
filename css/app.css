@@ -16,61 +16,47 @@ canvas {
 
 .message {
   font-family: 'Tangerine', serif;
-  font-size: 120px; 
+  font-size: 60px; 
   position: absolute; 
-  top: 40px; 
-  right: 40px;
-}
-
-.from {
-  font-family: 'Tangerine', serif;
-  font-size: 40px; 
-  width: 400px; 
-  position: absolute; 
-  bottom: 85px; 
-  left: 50%; 
-  margin-left: -200px; 
-  text-align: center;
+  top: 20px; 
+  left: 20px;
 }
 
 .name {
   font-family: 'Tangerine', serif;
-  font-size: 80px; 
-  width: 600px; 
+  font-size: 50px; 
   position: absolute; 
-  bottom: 0px; 
-  left: 50%; 
-  margin-left: -300px; 
-  text-align: center;
+  top: 100px; 
+  right: 20px; 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.create {
+.personalize {
   font-family: 'Tangerine', serif;
-  font-size: 40px; 
+  font-size: 30px; 
   position: absolute; 
-  bottom: 16px; 
-  left: 10px;
+  bottom: 5px;
+  left: 20px;
   cursor: pointer;
 }
 
-.create:hover {
-  font-size: 41px;
+.personalize:hover {
+  font-size: 31px;
 }
 
-.credits {
+.about {
   font-family: 'Tangerine', serif;
-  font-size: 40px; 
+  font-size: 30px; 
   position: absolute; 
-  bottom: 16px; 
-  right: 10px;
   cursor: pointer;
+  bottom: 5px;
+  right: 20px;
 }
 
-.credits:hover {
-  font-size: 41px;
+.about:hover {
+  font-size: 31px;
 }
 
 /* form */
@@ -85,12 +71,12 @@ canvas {
   z-index: 9;
 }
 
-#createForm {
+#personalizeForm {
   bottom: 70px;
   left: 10px;
 }
 
-#creditsPopup {
+#aboutPopup {
   bottom: 70px;
   right: 10px;
 }
@@ -139,7 +125,9 @@ canvas {
 }
 
 .sharing {
+  font-family: 'Tangerine', serif;
+  font-size: 30px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  bottom: 5px; 
+  left: 160px;
 }
