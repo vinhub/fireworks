@@ -1,7 +1,15 @@
-function openForm() {
+function openCreateForm() {
   document.getElementById('createForm').style.display = 'block';
 }
 
-function closeForm() {
+function closeCreateForm() {
   document.getElementById('createForm').style.display = 'none';
+}
+
+function openCreditsPopup() {
+  document.getElementById('creditsPopup').style.display = 'block';
+}
+
+function closeCreditsPopup() {
+  document.getElementById('creditsPopup').style.display = 'none';
 }

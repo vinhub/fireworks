@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>Enjoy Fireworks - from Redmond Labs</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
@@ -17,7 +18,7 @@
     <canvas id="canvas">Your browser does not support the 'canvas' element.</canvas>
     <div>
       <!-- AddToAny BEGIN -->
-      <div class="a2a_kit a2a_kit_size_32 a2a_default_style sharing">
+      <div class="a2a_kit a2a_kit_size_32 a2a_default_style sharing" data-a2a-title="Enjoy Fireworks - from Redmond Labs">
         <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
         <a class="a2a_button_facebook"></a>
         <a class="a2a_button_twitter"></a>
@@ -25,17 +26,16 @@
       </div>
       <script async src="https://static.addtoany.com/menu/page.js"></script>
       <!-- AddToAny END -->
-
       <div class="font-effect-fire-animation message" id="messageDisplay"></div>
       <div class="font-effect-neon from">From:&nbsp;</div>
       <div class="font-effect-neon name" id="nameDisplay"></div>
-      <div class="font-effect-neon create" onclick="openForm()">Create your own greeting</div>
-      <div class="font-effect-neon credits">Credits</div>
+      <div class="font-effect-neon create" onclick="openCreateForm()">Create your own greeting</div>
+      <div class="font-effect-neon credits" onclick="openCreditsPopup()">Credits</div>
     </div>
     
     <div class="form-popup" id="createForm">
       <form class="form-container">
-        <h1>Create Your Own Greeting</h1>
+        <h2>Create Your Own Greeting</h2>
 
         <label for="name"><b>Your Name:</b></label>
         <input type="text" placeholder="Enter your name" name="name" required />
@@ -44,7 +44,19 @@
         <input type="text" name="message" required value="Happy Independence Day!" />
 
         <button type="submit" class="btn">Create</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        <button type="button" class="btn cancel" onclick="closeCreateForm()">Close</button>
+      </form>
+    </div>
+
+    <div class="form-popup" id="creditsPopup">
+      <form class="form-container">
+        <h2>Enjoy Fireworks - from Redmond Labs!</h2>
+
+        <h3>Credits:</h3>
+        <div><b>Fireworks code:</b> <a href="https://airbrake.io/blog/javascript/fourth-of-july-javascript-fireworks" target="_blank">Andrew Powell-Morse</a></div>
+        <div><b>Background image:</b> <a href="https://www.goodfreephotos.com/" target="_blank">Good Free Photos</a></div>
+        
+        <button type="button" class="btn cancel" onclick="closeCreditsPopup()">Close</button>
       </form>
     </div>
   </body>
