@@ -29,31 +29,35 @@
     
     <div class="form-popup" id="personalizeForm">
       <form class="form-container">
-        <h2>Create Your Own Greeting</h2>
+        <h3>Create and share your own greeting</h3>
 
-        <label for="name"><b>Your Name:</b></label>
+        <label for="name">Your Name:</label>
         <input type="text" placeholder="Enter your name" name="name" required />
 
-        <label for="message"><b>Your Message:</b></label>
+        <label for="message">Message:</label>
         <input type="text" name="message" required value="Happy Independence Day!" />
 
-        <button type="submit" class="btn">Create</button>
         <button type="button" class="btn cancel" onclick="closePersonalizeForm()">Close</button>
+        <button type="submit" class="btn">Create</button>
+        <div style="clear: both; padding: 0px;"></div>
       </form>
     </div>
 
     <div class="form-popup" id="aboutPopup">
       <form class="form-container">
-        <h2>About Seattle Fireworks!</h2>
+        <h3>About Seattle Fireworks!</h3>
 
-        <div>A lot of cities are cancelling fireworks this year due to the pandemic. So this is an attempt to at least enjoy them virtually and share them with your friends.</div>
+        <div>Enjoy some virtual fireworks and share them with your friends.</div>
         
-        <h3>Credits:</h3>
-        <div>This is a fun little side project developed by <a href="https://github.com/vinhub" target="_blank">Vin Bhalerao</a>.</div>
-        <div><b>Original fireworks code:</b> <a href="https://airbrake.io/blog/javascript/fourth-of-july-javascript-fireworks" target="_blank">Andrew Powell-Morse</a></div>
-        <div><b>Background image:</b> <a href="https://www.goodfreephotos.com/" target="_blank">Good Free Photos</a></div>
-        
+        <div><b>Credits:</b></div>
+
+        <div>
+          <div>Developed by: <a href="https://github.com/vinhub" target="_blank">Vin Bhalerao</a>.</div>
+          <div>Fireworks: <a href="https://airbrake.io/blog/javascript/fourth-of-july-javascript-fireworks" target="_blank">Andrew Powell-Morse</a></div>
+          <div>Background image: <a href="https://www.goodfreephotos.com/" target="_blank">Good Free Photos</a></div>
+        </div>
         <button type="button" class="btn cancel" onclick="closeAboutPopup()">Close</button>
+        <div style="clear: both; padding: 0px;"></div>
       </form>
     </div>
   </body>
