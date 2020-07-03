@@ -1,4 +1,5 @@
 function openCreateForm() {
+  closeCreditsPopup();
   document.getElementById('createForm').style.display = 'block';
 }
 
@@ -7,6 +8,7 @@ function closeCreateForm() {
 }
 
 function openCreditsPopup() {
+  closeCreateForm();
   document.getElementById('creditsPopup').style.display = 'block';
 }
 
