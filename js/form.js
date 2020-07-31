@@ -5,6 +5,7 @@ function openPersonalizeForm() {
   const urlParams = new URLSearchParams(window.location.search);
   var name = urlParams.get('name');
   var message = urlParams.get('message');
+  var city = urlParams.get('city');
 
   if (!name)
     name = 'Vin Bhalerao';
@@ -12,8 +13,12 @@ function openPersonalizeForm() {
   if (!message)
     message = 'Happy Independence Day!';
     
+  if (!city)
+    city = 'Seattle';
+    
   document.getElementById('name').value = name;
   document.getElementById('message').value = message;
+  document.getElementById('city').value = city;
 }
 
 function closePersonalizeForm() {

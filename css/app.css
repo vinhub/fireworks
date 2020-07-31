@@ -107,14 +107,16 @@ canvas {
   display: inline-block;
   width: 100px;
   padding-left: 10px;
+  font-size: 14px;
 }
 
 .form-container input[type=text] {
   width: 224px;
-  padding: 10px;
+  padding: 4px 8px;
   margin: 5px 0 20px 0;
   border: none;
   background: #f1f1f1;
+  font-size: 14px;
 }
 
 /* When the inputs get focus, do something */
@@ -154,6 +156,14 @@ canvas {
   padding: 4px 8px 4px 8px;
   margin: 12px 2px 12px 2px;
   background-color: #fdcfb3;
+}
+
+.form-container select {
+  padding: 4px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+  font-size: 14px;
 }
 
 @media screen and (orientation: portrait){
