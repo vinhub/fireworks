@@ -159,6 +159,7 @@ canvas {
 }
 
 .form-container select {
+  width: 224px;
   padding: 4px;
   margin: 5px 0 20px 0;
   border: none;
