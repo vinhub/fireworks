@@ -167,10 +167,6 @@ canvas {
 }
 
 @media screen and (orientation: portrait){
-  body {
-    background-image: url('../img/seattlep.jpg');  
-  }
-
   .message {
     font-size: 48px; 
     top: 10px; 

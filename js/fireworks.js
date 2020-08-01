@@ -449,9 +449,31 @@ function initPage()
     
   document.getElementById('nameDisplay').innerText = 'From: ' + name;
   document.getElementById('messageDisplay').innerText = message;
+  
+  document.body.style.backgroundImage = getCityImage(city);
+
+  window.addEventListener("orientationchange", onOrientationChange);
 
   loop();
 }
 
 // Initiate loop after window loads.
 window.onload = initPage;
+
+// event handlers and helpers
+function onOrientationChange() {
+  var city = document.getElementById('city').value;
+  document.body.style.backgroundImage = getCityImage(city);
+}
+
+// generate background image name using city name and orientation
+function getCityImage(city) {
+  var orientation = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+  var suffix = '';
+
+  if (orientation.startsWith('portrait'))
+    suffix = 'p';
+  
+  var img = "url('./img/" + city + suffix + ".jpg')";
+  return img;
+}
