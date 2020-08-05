@@ -477,3 +477,16 @@ function getCityImage(city) {
   var img = "url('./img/" + city + suffix + ".jpg')";
   return img;
 }
+
+var speakerOn = false;
+function toggleSpeaker() {
+  speakerOn = !speakerOn;
+  var speaker = document.getElementById('speaker');
+  speaker.src = speakerOn ? 'img/speaker.png' : 'img/muted-speaker.png';
+  
+  var audio = document.getElementById('audio');
+  if (speakerOn)
+    audio.play();
+  else
+    audio.pause();
+}

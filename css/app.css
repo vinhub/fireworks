@@ -47,6 +47,13 @@ canvas {
   text-decoration: underline;
 }
 
+.speakerDiv {
+  position: absolute; 
+  cursor: pointer;
+  bottom: 15px;
+  right: 110px;
+}
+
 .about {
   font-family: 'Tangerine', serif;
   font-size: 36px; 
@@ -184,6 +191,11 @@ canvas {
     font-size: 36px; 
     top: 80px; 
     right: 0px; 
+  }
+
+  .speakerDiv {
+    bottom: 14px;
+    right: 100px;
   }
 }
 
