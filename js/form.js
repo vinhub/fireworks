@@ -14,7 +14,7 @@ function openPersonalizeForm() {
     message = 'Happy Independence Day!';
     
   if (!city)
-    city = 'Seattle';
+    city = 'Delhi 1';
     
   document.getElementById('name').value = name;
   document.getElementById('message').value = message;

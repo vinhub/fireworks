@@ -445,7 +445,7 @@ function initPage()
     message = 'Happy Independence Day!';
     
   if (!city)
-    city = 'Seattle';
+    city = 'Delhi 1';
     
   document.getElementById('nameDisplay').innerText = 'From: ' + name;
   document.getElementById('messageDisplay').innerText = message;
