@@ -6,7 +6,8 @@ body {
   background-image: url('../img/seattle.jpg');  
   background-repeat: no-repeat;  
   background-attachment: fixed; 
-  background-size: 100% 100%;
+  background-size: auto 100%;
+  background-position: center bottom;
 }
 
 /* Fit the canvas to the page width. */
@@ -168,6 +169,11 @@ canvas {
 }
 
 @media screen and (orientation: portrait){
+  body {
+    background-size: 100% auto;
+    background-position: center center;
+  }
+  
   .message {
     font-size: 48px; 
     top: 10px; 
