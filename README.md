@@ -1,5 +1,5 @@
 # fireworks
-Fireworks - from Redmond Labs. Create your own animated fireworks greeting and share it with your friends!
+Fireworks - from Redmond Labs. Personalize and share your own animated fireworks greeting!
 
 ## Credits:
   * Original fireworks code: 
@@ -8,4 +8,4 @@ Fireworks - from Redmond Labs. Create your own animated fireworks greeting and s
   * Images:
     * [Good Free Photos](https://www.goodfreephotos.com/)
     * [Wallpaperset.com](https://wallpaperset.com/)
-    
+    * [Wikimedia Commons](https://commons.wikimedia.org/)

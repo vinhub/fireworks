@@ -8,7 +8,7 @@ function openPersonalizeForm() {
   var city = urlParams.get('city');
 
   if (!name)
-    name = 'Vin Bhalerao';
+    name = 'Vin B.';
 
   if (!message)
     message = 'Happy Independence Day!';
