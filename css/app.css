@@ -32,12 +32,20 @@ canvas {
   padding-right: 5px;  
 }
 
+.speakerDiv {
+  position: absolute; 
+  cursor: pointer;
+  position: absolute;
+  left: 14px;
+  bottom: 18px;
+}
+
 .personalize {
   font-family: 'Tangerine', serif;
   font-size: 36px; 
   position: absolute; 
   bottom: 10px;
-  left: 20px;
+  left: 60px;
   cursor: pointer;
 }
 
@@ -46,11 +54,18 @@ canvas {
   text-decoration: underline;
 }
 
-.speakerDiv {
-  position: absolute; 
+.sharing {
+  font-family: 'Tangerine', serif;
+  font-size: 36px;
   cursor: pointer;
-  bottom: 15px;
-  right: 110px;
+  position: absolute;
+  bottom: 10px; 
+  left: 190px;
+}
+
+.sharing:hover {
+  font-size: 37px;
+  text-decoration: underline;
 }
 
 .about {
@@ -63,20 +78,6 @@ canvas {
 }
 
 .about:hover {
-  font-size: 37px;
-  text-decoration: underline;
-}
-
-.sharing {
-  font-family: 'Tangerine', serif;
-  font-size: 36px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 10px; 
-  left: 160px;
-}
-
-.sharing:hover {
   font-size: 37px;
   text-decoration: underline;
 }
@@ -190,11 +191,6 @@ canvas {
     font-size: 36px; 
     top: 80px; 
     right: 0px; 
-  }
-
-  .speakerDiv {
-    bottom: 14px;
-    right: 100px;
   }
 }
 
