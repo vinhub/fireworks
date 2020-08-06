@@ -474,7 +474,7 @@ function getCityImage(city) {
   if (orientation.startsWith('portrait'))
     suffix = 'p';
   
-  var img = "url('./img/" + city + suffix + ".jpg')";
+  var img = "url('img/" + city + suffix + ".jpg')";
   return img;
 }
 
