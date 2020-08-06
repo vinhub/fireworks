@@ -350,9 +350,9 @@ function launchAutomatedFirework() {
 			// Set start position to bottom center.
 			let startX = canvas.width / 2;
 			let startY = canvas.height;
-			// Set end position to random position, somewhere in the top half of screen.
+			// Set end position to random position, somewhere in the top third of screen.
 			let endX = random(0, canvas.width);
-			let endY = random(0, canvas.height / 2);
+			let endY = random(0, canvas.height / 3);
 			// Create new firework and add to collection.
 			fireworks.push(new Firework(startX, startY, endX, endY));
 			// Reset tick counter.
