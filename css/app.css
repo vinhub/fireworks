@@ -192,6 +192,10 @@ canvas {
     top: 80px; 
     right: 0px; 
   }
+
+  .speakerDiv {
+    bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 900px){
