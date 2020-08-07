@@ -468,8 +468,19 @@ function onOrientationChange() {
 
 // generate background image name using city name and orientation
 function getCityImage(city) {
-  var orientation = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+	var orientation = (screen.orientation || window.orientation || { }).type || screen.mozOrientation || screen.msOrientation;
   var suffix = '';
+
+  if (orientation === undefined) {
+    var mql = window.matchMedia("(orientation: portrait)");
+
+	// If there are matches, we're in portrait
+	if (mql.matches) {
+      orientation = 'portrait';
+	} else {
+	  orientation = 'landscape';
+    }
+  }
 
   if (orientation.startsWith('portrait'))
     suffix = 'p';
