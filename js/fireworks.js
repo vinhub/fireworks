@@ -452,7 +452,7 @@ function initPage()
   
   document.body.style.backgroundImage = getCityImage(city);
 
-  window.addEventListener("orientationchange", onOrientationChange);
+  window.addEventListener("resize", onResize);
 
   loop();
 }
@@ -461,31 +461,16 @@ function initPage()
 window.onload = initPage;
 
 // event handlers and helpers
-function onOrientationChange() {
+function onResize() {
   var city = document.getElementById('city').value;
   document.body.style.backgroundImage = getCityImage(city);
 }
 
 // generate background image name using city name and orientation
 function getCityImage(city) {
-	var orientation = (screen.orientation || window.orientation || { }).type || screen.mozOrientation || screen.msOrientation;
-  var suffix = '';
+  var fLandscape = window.innerWidth > window.innerHeight;
 
-  if (orientation === undefined) {
-    var mql = window.matchMedia("(orientation: portrait)");
-
-	// If there are matches, we're in portrait
-	if (mql.matches) {
-      orientation = 'portrait';
-	} else {
-	  orientation = 'landscape';
-    }
-  }
-
-  if (orientation.startsWith('portrait'))
-    suffix = 'p';
-  
-  var img = 'url("img/' + city + suffix + '.jpg")';
+  var img = 'url("img/' + city + (fLandscape ? '' : 'p') + '.jpg")';
   return img;
 }
 
