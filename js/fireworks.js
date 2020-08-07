@@ -446,10 +446,17 @@ function initPage()
     
   if (!city)
     city = 'Delhi 1';
-    
+
+  // display
   document.getElementById('nameDisplay').innerText = 'From: ' + name;
   document.getElementById('messageDisplay').innerText = message;
+
+  // form fields
+  document.getElementById('name').value = name;
+  document.getElementById('message').value = message;
+  document.getElementById('city').value = city;
   
+  // background
   document.body.style.backgroundImage = getCityImage(city);
 
   window.addEventListener("resize", onResize);
