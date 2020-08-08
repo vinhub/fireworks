@@ -113,12 +113,12 @@ canvas {
 }
 
 #personalizeForm {
-  bottom: 35px;
+  bottom: 60px;
   left: 5px;
 }
 
 #aboutPopup {
-  bottom: 35px;
+  bottom: 60px;
   right: 5px;
 }
 
@@ -180,8 +180,8 @@ canvas {
 }
 
 .form-container h3 {
-  padding: 4px 8px 4px 8px;
-  margin: 12px 2px 12px 2px;
+  padding: 8px;
+  margin: 0px -8px 0px -8px;
   background-color: #fdcfb3;
 }
 
