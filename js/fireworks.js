@@ -469,8 +469,9 @@ window.onload = initPage;
 
 // event handlers and helpers
 function onResize() {
-  var city = document.getElementById('city').value;
-  document.body.style.backgroundImage = getCityImage(city);
+	location.href = location.href;
+//   var city = document.getElementById('city').value;
+//   document.body.style.backgroundImage = getCityImage(city);
 }
 
 // generate background image name using city name and orientation
