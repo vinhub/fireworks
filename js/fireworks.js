@@ -442,10 +442,10 @@ function initPage()
     name = 'Vin B.';
 
   if (!message)
-    message = 'Happy Independence Day!';
+    message = 'Happy New Year!';
     
   if (!city)
-    city = 'Delhi 1';
+    city = 'Seattle';
 
   // display
   document.getElementById('nameDisplay').innerText = 'From: ' + name;

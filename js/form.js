@@ -11,10 +11,10 @@ function openPersonalizeForm() {
     name = 'Vin B.';
 
   if (!message)
-    message = 'Happy Independence Day!';
+    message = 'Happy New Year!';
     
   if (!city)
-    city = 'Delhi 1';
+    city = 'Seattle';
     
   document.getElementById('name').value = name;
   document.getElementById('message').value = message;
